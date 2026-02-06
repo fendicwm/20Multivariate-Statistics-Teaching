@@ -1,0 +1,5 @@
+compare1	compare2
+Tre-Pre	Con-Pre
+Tre-Pre	Tre-Pos
+Con-Pre	Con-Pos
+Tre-Pos	Con-Pos
