@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="王超" />
+
+
+<title>教学笔记</title>
+
+<script src="index_files/header-attrs-2.22/header-attrs.js"></script>
+<script src="index_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="index_files/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
+<script src="index_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="index_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="index_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="index_files/navigation-1.1/tabsets.js"></script>
+<link href="index_files/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="index_files/pagedtable-1.1/js/pagedtable.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">教学笔记</h1>
+<h4 class="author">王超</h4>
+<h4 class="date">05-02-2026</h4>
+
+</div>
+
+
+<style>
+h1.title{
+  font-size: 28px !important;
+}
+.hero-title{
+  text-align:center;
+  color: rgb(200,100,100);
+  font-weight: 800;
+  font-size: 28px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.hero-sub{
+  text-align:center;
+  color: #666;
+  font-size: 12.5px;
+  margin-bottom: 4px;
+}
+.cover-wrap{
+  display:flex;
+  justify-content:center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cover-wrap img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0,0,0,.10);
+}
+.note{
+  color: #930000;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.card{
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 14px 16px;
+  margin: 12px 0;
+  box-shadow: 0 8px 18px rgba(0,0,0,.05);
+  background: #fff;
+}
+.card strong{ font-size: 15px; }
+.small{ color:#666; font-size: 13px; }
+.hr-soft{
+  border: none;
+  height: 1px;
+  background: #eee;
+  margin: 20px 0;
+}
+
+/* ===== Course Cards ===== */
+.course-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 16px;
+}
+.course-card{
+  border-radius: 18px;
+  padding: 18px 20px;
+  background: linear-gradient(145deg,#ffffff,#f6f6f6);
+  box-shadow: 0 10px 26px rgba(0,0,0,.06);
+  transition: all .25s ease;
+  border: 1px solid #eee;
+}
+.course-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0,0,0,.12);
+}
+.course-no{
+  font-size: 26px;
+  font-weight: 800;
+  color: rgb(200,100,100);
+}
+.course-title{
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+.course-desc{
+  font-size: 14px;
+  color:#666;
+  line-height: 1.6;
+  margin-top: 6px;
+}
+.course-card a{
+  text-decoration:none;
+  color: inherit;
+}
+
+/* ===== Interaction ===== */
+.interact-wrap{
+  display:flex;
+  gap:16px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+.interact-card{
+  flex:1;
+  min-width:240px;
+  border-radius: 16px;
+  padding: 14px 18px;
+  background: #fafafa;
+  border:1px solid #eee;
+  transition:.25s;
+}
+.interact-card:hover{
+  background:#fff;
+  box-shadow:0 10px 22px rgba(0,0,0,.08);
+}
+.interact-title{
+  font-weight:700;
+  margin-bottom:4px;
+}
+.interact-desc{
+  font-size:13px;
+  color:#666;
+}
+.interact-card a{
+  text-decoration:none;
+  color: inherit;
+}
+/* ===== Floating Action Button (GitHub Issues) ===== */
+.fab{
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 9999;
+  padding: 12px 16px;
+  border-radius: 999px;
+  background: rgb(200,100,100);
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 12px 26px rgba(0,0,0,.18);
+  transition: .2s;
+}
+.fab:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(0,0,0,.22);
+}
+
+</style>
+
+<div class="cover-wrap">
+  <img src="Figures/00Master/Multivariate-Statistics-Lists.png"
+       alt="Multivariate Statistics Course Overview">
+</div>
+
+
+<div class="note">
+  本课程教学笔记基于 GitHub 进行版本管理与资源集成，
+  所有专题内容以 R Markdown 形式持续更新。
+  
+  <hr class="hr-soft"/>
+  
+</div>
+
+
+<div class="note">
+
+  <h2>软件及说明</h2>
+
+  <div class="card">
+    <strong>SPSS</strong>：统计及多元统计 + EFA + 信度检验<br/>
+    <span class="small">
+      IBM SPSS Statistics (Version <b>29.0 or later</b>)
+    </span>
+  </div>
+
+  <div class="card">
+    <strong>PROCESS</strong>：中介 / 调节 / 条件过程分析
+  </div>
+
+  <div class="card">
+    <strong>AMOS</strong>：CFA + SEM + 效度检验<br/>
+   <span class="small">
+      Windows-only；推荐插件：
+      <a href="Figures/00Master/Amos-Plugin.png" target="_blank">
+        Validity Master
+      </a>
+    </span>
+  </div>
+
+  <div class="card">
+    <strong>R / G*Power</strong>：数据可视化 + 样本量估计
+  </div>
+
+</div>
+
+
+
+<hr class="hr-soft"/>
+
+<h2>课程目录</h2>
+
+
+<div class="course-grid">
+
+  <div class="course-card">
+    <a href="01Foundation/index.html">
+      <div class="course-no">01</div>
+      <div class="course-title">统计基础</div>
+      <div class="course-desc">
+        基本概念、变量类型、概率分布、置信区间
+      </div>
+    </a>
+  </div>
+
+  <div class="course-card">
+    <a href="02Hypothesis_Test/index.html">
+      <div class="course-no">02</div>
+      <div class="course-title">假设检验</div>
+      <div class="course-desc">
+        效应量、样本量、t 检验、非参数检验、卡方检验
+      </div>
+    </a>
+  </div>
+
+  <div class="course-card">
+    <a href="03ANOVA/index.html">
+      <div class="course-no">03</div>
+      <div class="course-title">方差分析</div>
+      <div class="course-desc">
+        单因素、双因素、重复测量、混合模型
+      </div>
+    </a>
+  </div>
+
+  <div class="course-card">
+    <a href="04Cor_Reg/index.html">
+      <div class="course-no">04</div>
+      <div class="course-title">相关与回归</div>
+      <div class="course-desc">
+        线性相关、一元线性回归、多元线性回归、逻辑回归
+      </div>
+    </a>
+  </div>
+
+  <div class="course-card">
+    <a href="05Data_Visualization/index.html">
+      <div class="course-no">05</div>
+      <div class="course-title">数据可视化</div>
+      <div class="course-desc">
+        箱线图、云雨图、雷达图、相关性热图、词云图
+      </div>
+    </a>
+  </div>
+
+  <div class="course-card">
+    <a href="06FA/index.html">
+      <div class="course-no">06</div>
+      <div class="course-title">因子分析</div>
+      <div class="course-desc">
+        探索性因子分析、验证性因子分析
+      </div>
+    </a>
+  </div>
+
+  <div class="course-card">
+    <a href="07Reliability_Validity/index.html">
+      <div class="course-no">07</div>
+      <div class="course-title">信效度检验</div>
+      <div class="course-desc">
+        Alpha、重测信度、结构效度、聚敛效度、区分效度
+      </div>
+    </a>
+  </div>
+
+  <div class="course-card">
+    <a href="08CMB/index.html">
+      <div class="course-no">08</div>
+      <div class="course-title">共同方法偏差</div>
+      <div class="course-desc">
+        程序控制、统计评估
+      </div>
+    </a>
+  </div>
+
+  <div class="course-card">
+    <a href="09Data_Preparation/index.html">
+      <div class="course-no">09</div>
+      <div class="course-title">数据预处理</div>
+      <div class="course-desc">
+        数据清洗、项目分析
+      </div>
+    </a>
+  </div>
+
+  <div class="course-card">
+    <a href="10SEM/index.html">
+      <div class="course-no">10</div>
+      <div class="course-title">结构方程模型</div>
+      <div class="course-desc">
+        Amos操作、模型构建、模型评估、多群组模型
+      </div>
+    </a>
+  </div>
+
+  <div class="course-card">
+    <a href="11Path_Analysis/index.html">
+      <div class="course-no">11</div>
+      <div class="course-title">路径分析</div>
+      <div class="course-desc">
+        中介、调节、条件过程分析
+      </div>
+    </a>
+  </div>
+
+  <div class="course-card">
+    <a href="12Survival_Analysis/index.html">
+      <div class="course-no">12</div>
+      <div class="course-title">生存分析</div>
+      <div class="course-desc">
+        Censored Data、K-M Curve、L-R Test、Cox PH Model
+      </div>
+    </a>
+  </div>
+  
+
+</div>
+
+
+
+<hr class="hr-soft" style="border-top: 1px dashed #ccc;"/>
+
+<div class="course-grid">
+
+  <div class="course-card">
+    <a href="13Indicator_Weights/index.html">
+      <div class="course-no">13</div>
+      <div class="course-title">指标权重</div>
+      <div class="course-desc">
+        主成分分析法、层次分析法
+      </div>
+    </a>
+  </div>
+  
+  <div class="course-card">
+    <a href="14LPA/index.html">
+      <div class="course-no">14</div>
+      <div class="course-title">潜在剖面分析</div>
+      <div class="course-desc">
+        LPA Analysis、Data Visualization
+      </div>
+    </a>
+  </div>
+
+</div>
+
+
+<hr class="hr-soft"/>
+
+<h2>课程互动 · GitHub</h2>
+
+<div class="interact-wrap">
+
+  <div class="interact-card">
+    <a href="https://github.com/fendicwm/20Multivariate-Statistics/issues">
+      <div class="interact-title">📌 提问与讨论</div>
+      <div class="interact-desc">
+        课程内容疑问、方法理解与交流
+      </div>
+    </a>
+  </div>
+
+  <div class="interact-card">
+    <a href="https://github.com/fendicwm/20Multivariate-Statistics/issues/new">
+      <div class="interact-title">🐞 报错 / 勘误</div>
+      <div class="interact-desc">
+        发现代码或文字问题，欢迎反馈
+      </div>
+    </a>
+  </div>
+
+  <div class="interact-card">
+    <a href="https://github.com/fendicwm/20Multivariate-Statistics/discussions">
+      <div class="interact-title">💡 改进建议</div>
+      <div class="interact-desc">
+        对课程结构与内容的建议
+      </div>
+    </a>
+  </div>
+
+</div>
+
+<div class="small" style="margin-top:10px;">
+  建议在 GitHub 中启用 Issues 与 Discussions 功能以支持课程互动。
+</div>
+
+
+<a class="fab" href="https://github.com/fendicwm/20Multivariate-Statistics/issues" target="_blank">
+  💬 课程提问
+</a>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
