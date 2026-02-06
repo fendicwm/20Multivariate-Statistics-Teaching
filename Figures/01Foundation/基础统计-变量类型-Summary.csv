@@ -1,0 +1,8 @@
+Property,Discrete,,Continuous,
+,Nominal,Ordinal,Interval,Ratio
+Has a natural "Order",NO,YES,YES,YES
+Mode can be calculated,YES,YES,YES,YES
+Median can be calculated,,YES,YES,YES
+Mean can be calculated,,,YES,YES
+Exact difference between values,,,YES,YES
+Has a "True zero" value,,,,YES
