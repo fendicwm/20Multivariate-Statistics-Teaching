@@ -57,3 +57,6 @@
 
 如果您对课程内容有任何问题或建议，欢迎通过 GitHub 进行反馈。您还可以为课程贡献内容，提出您的见解或教学改进意见。
 
+---
+
+**License**: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
